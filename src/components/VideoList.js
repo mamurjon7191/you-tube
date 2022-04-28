@@ -1,4 +1,6 @@
 import React from "react";
+import VideoDetails from "./VideoDetails.js";
+import "../style.css";
 
 class VideoList extends React.Component {
   constructor(props) {
@@ -11,13 +13,13 @@ class VideoList extends React.Component {
     return this.props.data.data?.items.map((val) => {
       return (
         <div key={val.id.videoId}>
-          <img src={val.snippet.thumbnails.high.url}></img>
+          <VideoDetails value={val} />
         </div>
       );
     });
   }
   render() {
-    return <div>{this.renderList()}</div>;
+    return <div className="all">{this.renderList()}</div>;
   }
 }
 export default VideoList;

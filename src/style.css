@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 0 auto;
+}
+.card {
+  cursor: pointer;
+  width: 900px;
+  height: 305px;
+  border: 2px solid rgba(0, 0, 0, 0.477);
+  display: flex;
+}
+.card img {
+  width: 300px;
+  height: 300px;
+}
+.right-side {
+  display: flex;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.def {
+  margin-top: 1rem;
+  gap: 2rem;
+  display: flex;
+}
+.def p {
+  font-size: 1.6rem;
+}
+.canalName {
+  display: flex;
+  font-size: 1.4rem;
+  margin-left: -20%;
+}
+.canalImg {
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  transform: scale(0.2);
+  margin-top: -120px;
+}
+.canalName1 {
+  margin-left: -100px;
+}
+.title h1 {
+  font-size: 1.6rem;
+}
+.definition {
+  margin-top: -7rem;
+  font-size: 1.2rem;
+}
