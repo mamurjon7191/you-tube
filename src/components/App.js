@@ -2,6 +2,7 @@ import React from "react";
 import SearchBar from "./SearchBar.js";
 import axios from "axios";
 import VideoList from "./VideoList.js";
+import VideoItem from "./VideoItem.js";
 
 class App extends React.Component {
   constructor(props) {
@@ -35,6 +36,7 @@ class App extends React.Component {
       <div>
         <SearchBar getRequest={this.getData} />
         <VideoList data={this.state.videoListArr} />
+        <VideoItem />
       </div>
     );
   }

@@ -7,8 +7,15 @@ class VideoDetails extends React.Component {
     super(props);
     this.state = {
       url: "",
+      videoId: "",
     };
   }
+  getId = () => {
+    this.setState({
+      videoId: this.props.value.id.videoId,
+    });
+    console.log(this.state.videoId);
+  };
   takingChannelImage = async (id) => {
     const key = "AIzaSyBXLaVmouQHc1TnhlQV8jv_-fuBQltRjfw";
     const data = await fetch(
@@ -31,7 +38,7 @@ class VideoDetails extends React.Component {
         </div>
         <div className="right-side">
           <div className="title">
-            <h1>{this.props.value.snippet.title}</h1>
+            <a onClick={this.getId}>{this.props.value.snippet.title}</a>
           </div>
           <div className="def">
             <p>
